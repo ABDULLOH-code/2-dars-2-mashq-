@@ -1,0 +1,109 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Form heading */
+h1 {
+    text-align: center;
+    font-size: 1.6em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label[for="erkak"],
+label[for="ayol"] {
+    margin-right: 15px;
+    color: #555555;
+    font-weight: normal;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+/* Button hover effects */
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Form responsiveness */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

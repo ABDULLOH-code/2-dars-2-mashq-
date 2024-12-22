@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxsiy Ma'lumotlar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="/submit-personal-info" method="post">
+        <h1>Shaxsiy Ma'lumotlarni Kiritish</h1>
+        <label for="ism">Ismingiz:</label>
+        <input type="text" id="ism" name="ism" placeholder="Ismingizni kiriting" required>
+
+        <label for="familiya">Familiyangiz:</label>
+        <input type="text" id="familiya" name="familiya" placeholder="Familiyangizni kiriting" required>
+
+        <label for="email">Email manzilingiz:</label>
+        <input type="email" id="email" name="email" placeholder="Email manzilingizni kiriting" required>
+
+        <label for="yosh">Yoshingiz:</label>
+        <input type="number" id="yosh" name="yosh" placeholder="Yoshingizni kiriting" required>
+
+        <label for="jins">Jinsingiz:</label>
+        <input type="radio" id="erkak" name="jins" value="erkak" required>
+        <label for="erkak">Erkak</label>
+        <input type="radio" id="ayol" name="jins" value="ayol" required>
+        <label for="ayol">Ayol</label>
+
+        <div>
+            <input type="submit" value="Ma'lumotni yuborish">
+            <input type="reset" value="Tozalash">
+        </div>
+    </form>
+</body>
+
+</html>
